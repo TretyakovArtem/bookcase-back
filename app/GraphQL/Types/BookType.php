@@ -32,6 +32,10 @@ class BookType extends GraphQLType{
                 'title'  => [
                     'type' => Type::nonNull(Type::string()),
                     'description' => 'Book title'
+                ],
+                'id'  => [
+                    'type' => Type::nonNull(Type::id()),
+                    'description' => 'Book id'
                 ]
             ];
         }
